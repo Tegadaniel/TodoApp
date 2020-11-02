@@ -31,7 +31,7 @@ import TodoForm from './TodoForm'
       <h1 className="heading display-5 pb-3">Todo List!!</h1>
       <TodoForm create={this.create}/>
         <div></div>
-        <ul class="list-group list-group-flush">
+        <ul className="list-group list-group-flush">
 
         <li className="list-group-item">{todos} </li>
         </ul>

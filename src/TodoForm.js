@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import uuid from 'uuid/v4'
+import nextId from "react-id-generator";
 
 class TodoForm extends Component {
+
   constructor(props) {
     super(props)
   
@@ -17,7 +18,7 @@ class TodoForm extends Component {
   }
   handleSubmit = (evt) =>{
     evt.preventDefault()
-    this.props.create({...this.state,  id: uuid()})
+    this.props.create({...this.state,  id: nextId()})
     this.setState({
       task: ""
     })
