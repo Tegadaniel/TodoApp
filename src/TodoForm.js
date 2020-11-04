@@ -28,13 +28,13 @@ class TodoForm extends Component {
       <form onSubmit={this.handleSubmit}>
       <div className="form-group">
       <div className="form-group row">
-        <div className="col-sm-10">
+        
         <input type="text" placeholder = "Enter New Todo" 
         id="task" value={this.state.task} 
         required
         name= "task"  className = "form-control"
         onChange={this.handleChange}/>
-        </div>
+        {/* </div> */}
         </div>
         <div className="form-group">
         <button className="btn btn-dark " >Submit new todo</button>
